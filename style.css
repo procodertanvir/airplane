@@ -1,0 +1,228 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+img{
+   max-width: 100%;
+}
+
+
+body{
+   font-family: 'Lobster Two', cursive;
+}
+
+/* =================== Main Div Style Start ================= */
+
+.main{
+   height: 100vh;
+   background: linear-gradient(#21b3e1,#fff);
+   overflow: hidden;
+}
+
+.navbar{
+   width: 100%;
+   border-bottom: 1px solid #b7e7f6;
+}
+
+nav {
+   width: 80%;
+   align-items: center;
+   margin: 20px auto 0;
+   display: flex;
+   position: sticky;
+   z-index: 2;
+   justify-content: space-between;
+}
+
+#logo{
+   flex-basis: 15%;
+}
+#logo img{
+   width: 100px;
+}
+
+
+.menu {
+   display: flex;
+   align-items: center;
+}
+.menu ul{
+   list-style: none;
+   display: flex;
+}
+.menu ul li {
+   position: relative;
+   margin: 0 20px;
+   padding: 18px 10px;
+}
+.menu ul li::after{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 3px;
+   background: transparent;
+   bottom: 0;
+   left: 0;
+   transition: 500ms;
+}
+
+.menu ul li:hover::after{
+   background: #fff;
+}
+.active::after{
+   background: #fff !important;
+}
+
+.menu ul li a {
+   text-decoration: none;
+   color: #b7e7f6;
+   transition: 500ms;
+}
+.menu ul li a:hover{
+   color: #fff;
+}
+
+
+.menu-icon{
+   flex-basis: 15%;
+}
+.menu-icon img{
+   width: 35px;
+   float: right;
+}
+
+
+
+.content{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+}
+.social-icons{
+   display: flex;
+   z-index: 2;
+}
+.social-icons a{
+   margin: 15px;
+   color: #fff;
+   font-size: 18px;
+   transition: 500ms;
+}
+.social-icons a:hover{
+   transform: translateY(-5px);
+}
+
+
+.search-box{
+   margin-top: 20px;
+   border: 1px solid #b7e7f6;
+   border-radius: 30px;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: linear-gradient(rgba(255, 255, 255, .2), rgba(255,255,255,0));
+   width: 300px;
+}
+.search-box input{
+   width: 100%;
+   border: none;
+   border-radius: 30px;
+   padding: 8px 15px;
+   outline: none;
+   background: transparent;
+   color: #b7e7f6;
+}
+.search-box span{
+   color: #d6f3fc;
+   font-size: 20px;
+   margin: 2% 4%;
+}
+
+::placeholder{
+   color: #b7e7f6;
+}
+
+
+#clouds{
+   width: 100%;
+   position: absolute;
+   top: -100px;
+   left: 0;
+   animation: clouds 5s linear infinite;
+}
+
+@keyframes clouds{
+   0%    {top: -100px;}
+   20%   {top: 100px;}
+   80%   {top: 100px;}
+   100%  {top: -100px;}
+}
+
+#plane{
+   width: 200px;
+   position: absolute;
+   top: 150px;
+   left: 0px;
+   /* z-index: 2; */
+   animation: plane 5s linear infinite;
+}
+@keyframes plane{
+   0%    {left: 0px;}
+   /* 20%   {left: 250px; opacity: 1;}
+   80%   {left: 250px; opacity: 1;} */
+   100%  {left: 85%; opacity: 0;}
+}
+
+
+#airBallon{
+   width: 700px;
+   height: 400px;
+   position: relative;
+   top: 350px;
+   left: 25%;
+   transform: translateX(-50%);
+   animation: hairBallon 5s linear infinite;
+}
+
+@keyframes hairBallon{
+   0%    {top: 350px;}
+   20%   {top: 150px;}
+   80%   {top: 150px;}
+   100%  {top: 350px;}
+}
+
+/* .airBallon img{} */
+
+#ballon1 {
+   width: 150px;
+   opacity: .4;
+}
+#ballon2 {
+   width: 350px;
+}
+#ballon3 {
+   width: 150px;
+   opacity: .4;
+}
+
+
+
+#pause{
+   width: 50px;
+   height: 50px;
+   border-radius: 30px;
+   margin-top: 60px;
+   margin-left: 100px;
+   /* position: relative;
+   top: 50px;
+   left: 3.2%; */
+   transform: translateX(-80%);
+}
+
+#pause:hover{
+   cursor: pointer;
+}
+/* =================== Main Div Style End ================= */

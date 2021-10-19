@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Airplane Website by Procoder Tanvir</title>
+
+   <!-- Font Awesome v6.0.0beta-2 -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+   <!-- Main CSS -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+   
+   <div class="main">
+      <div class="navbar">
+         <nav>
+            <a href="#" id="logo">
+               <img src="./images/logo.png" alt="">
+            </a>
+            
+            <div class="menu">
+               <ul>
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Services</a></li>
+               </ul>
+            </div>
+
+            <div class="menu-icon">
+               <img src="./images/menu.png" alt="">
+            </div>
+
+         </nav>
+      </div>
+
+      <!-- Content Section Start -->
+      <div class="content">
+         <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+         </div>
+
+         <div class="search-box">
+            <input type="text" placeholder="search">
+            <span><i class="fas fa-search"></i></span>
+         </div>
+
+         <img src="./images/cloud.png" alt="" id="clouds">
+         <img src="./images/plane.png" alt="" id="plane">
+
+         <div id="airBallon">
+            <img src="./images/balloon.png" alt="" id="ballon1">
+            <img src="./images/balloon.png" alt="" id="ballon2">
+            <img src="./images/balloon.png" alt="" id="ballon3">
+         </div>
+
+         <img src="./images/pause.png" alt="" id="pause">
+      </div>
+      <!-- Content Section End -->
+
+      <script>
+         var pause = document.getElementById("pause");
+
+         pause.onclick = function(){
+            if(clouds.style.webkitAnimationPlayState == "paused")
+               {
+                  clouds.style.webkitAnimationPlayState = "running";
+                  plane.style.webkitAnimationPlayState = "running";
+                  airBallon.style.webkitAnimationPlayState = "running";
+                  pause.src = 'images/pause.png';
+               }
+            else{
+                  clouds.style.webkitAnimationPlayState = "paused";
+                  plane.style.webkitAnimationPlayState = "paused";
+                  airBallon.style.webkitAnimationPlayState = "paused";
+                  pause.src = 'images/play.png';
+               }
+         }
+      </script>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* ======================= Query For Max Width : 1400px, Start ==================== */
+@media screen and (max-width: 1400px){
+   #airBallon {
+      left: 27.5%;
+  }
+}
+/* ======================= Query For Max Width : 1400px, End ==================== */
+
+/* ======================= Query For Max Width : 1200px, Start ==================== */
+@media screen and (max-width: 1200px){
+   #plane {
+      width: 170px;
+  }
+   #airBallon {
+      left: 38%;
+  }
+   #ballon1 {
+      width: 130px;
+  }
+   #ballon2 {
+      width: 250px;
+  }
+  #ballon3 {
+   width: 130px;
+  }
+}
+/* ======================= Query For Max Width : 1200px, End ==================== */
+
+/* ======================= Query For Max Width : 992px, Start ==================== */
+@media screen and (max-width: 992px) {
+   #plane {
+      width: 150px;
+  }
+   #airBallon {
+      left: 47.65%;
+   }
+   #ballon1 {
+      width: 120px;
+  }
+  #ballon2 {
+   width: 235px;
+   }
+   #ballon3 {
+      width: 120px;
+  }
+}
+/* ======================= Query For Max Width : 992px, End ==================== */
+
+/* ======================= Query For Max Width : 768px, Start ==================== */
+@media screen and (max-width: 768px) {
+   nav {
+      flex-direction: column;
+   }
+  .menu-icon {
+   visibility: hidden;
+   opacity: 0;
+   }
+  #logo {
+   flex-basis: 100%;
+   }
+
+   #plane {
+      width: 130px;
+   }
+
+   #airBallon {
+      left: 67%;
+   }
+   #ballon1 {
+      width: 100px;
+   }
+   #ballon2 {
+      width: 190px;
+   }
+   #ballon3 {
+      width: 100px;
+   }
+}
+/* ======================= Query For Max Width : 768px, End ==================== */
+
+/* ======================= Query For Max Width : 576px, Start ==================== */
+@media screen and (max-width: 576px) {
+   #airBallon {
+      left: 89%;
+  }
+  nav {
+   justify-content: flex-start;
+   flex-direction: column;
+   align-items: flex-start;
+   }
+   .menu ul {
+      flex-direction: column;
+  }
+}
+/* ======================= Query For Max Width : 576px, End ==================== */
